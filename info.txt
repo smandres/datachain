@@ -1,0 +1,2 @@
+We can make all front-end streamlit stuff on app.py
+Handle all LLM functions on kernel.py and just call them on app.py
