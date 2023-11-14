@@ -1,0 +1,14 @@
+Task for Dataframe Preparation:
+Construct a Pandas dataframe query based on the following request: {{$prompt}}
+
+You have data with columns {{$columns}} with descriptions {{$descriptions}}
+
+Instructions:
+
+Write the necessary Pandas query to return a dataframe that can answer the prompt.
+Do not answer the prompt itself. Do not get influenced by aggregation words such as sum and total
+Comments in the code should be concise.
+Do not display the dataframe output.
+
+Output Format:
+Provide the code with the syntax df = at the beginning.

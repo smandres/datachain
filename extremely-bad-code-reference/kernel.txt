@@ -1,0 +1,28 @@
+import semantic_kernel as sk
+from semantic_kernel.core_skills import TimeSkill
+from semantic_kernel.connectors.ai.open_ai import (
+    OpenAITextCompletion,
+    OpenAIChatCompletion,
+)
+
+class Kernel(sk.kernel):
+    # instatiate kernel
+    def __init__(self) -> None:
+        # create kernel object
+        self._kernel = sk.Kernel(log=sk.NullLogger())
+        # configure LLM
+        self._configure()
+        # create context attribute
+        self._context = self._kernel.create_new_context()
+
+    # configure LLM
+    def _configure(self) -> None:
+        # import LLM settings
+        api_key, org_id = sk.openai_settings_from_dot_env()
+        self._kernel.add_chat_service(
+            "chat_completion", OpenAIChatCompletion("gpt-4", api_key, org_id)
+        )
+    
+    
+
+

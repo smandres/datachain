@@ -1,0 +1,6 @@
+Given the prompt {{$prompt}} create Plotly code to create a choropleth map
+You have a dataframe with column names and types {{Smetadata}}
+Do not import external libraries
+Return only the code
+Comment the code
+code = 
