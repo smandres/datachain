@@ -10,6 +10,7 @@ kernel = sk.Kernel()
 api_key, org_id = sk.openai_settings_from_dot_env()
 kernel.add_chat_service("chat_completion", OpenAIChatCompletion("gpt-3.5-turbo", api_key, org_id))
 
+
 # Configure embeddings
 kernel.add_text_embedding_generation_service("ada", OpenAITextEmbedding("text-embedding-ada-002", api_key, org_id))
 
