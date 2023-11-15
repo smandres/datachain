@@ -1,0 +1,22 @@
+{
+    "schema": 1,
+    "type": "completion",
+    "description": "The function is a backend service that cleans the data, segment the dataframe into multiple possible dataframes, and save the dataframes into memory. This will return a list of dataframes and their id.",
+    "completion": {
+        "max_tokens": 2000,
+        "temperature": 0,
+        "top_p": 0,
+        "presence_penalty": 0,
+        "frequency_penalty": 0
+    },
+    "input": {
+        "parameters": [
+            {
+                "name": "input",
+                "description": "Input for this semantic function.",
+                "defaultValue": ""
+            }
+        ]
+    },
+    "default_backends": []
+}
