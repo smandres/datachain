@@ -1,8 +1,0 @@
-Given the prompt {{$prompt}} create matplotlib code to create the requested visualization
-
-You have a dataframe with columns {{$columns}} with descriptions {{$descriptions}}
-
-Do not import external libraries
-Return only the code
-Comment the code
-code = 

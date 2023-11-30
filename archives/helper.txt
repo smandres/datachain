@@ -1,0 +1,7 @@
+responses = {'0': ('plot age vs income', 
+[{'step_id': 'msg_Zt8Z3uNJtbkYE2tEfDqjd9Mh', 'run_id': 'run_Y95lWsU0NlPa5RJa0MUHqtpQ', 'thread_id': 'thread_DKnOk4ImCvaUVBxFqXL3JT1l', 'role': 'assistant', 'image_file_file_id': 'file-k66AjbIpye90NCT4ibprGdBm', 'value': "Here is the scatter plot showing the relationship between age and annual income. Each point represents a person, with the person's age plotted against their annual income. There doesn't appear to be a clear correlation between age and income from the plot.", 'IMAGE': 'images\\file-k66AjbIpye90NCT4ibprGdBm.png', 'input': None},
+ {'step_id': 'msg_h0VN9TpXuPhForQgoaGDmrKS', 'run_id': 'run_Y95lWsU0NlPa5RJa0MUHqtpQ', 'thread_id': 'thread_DKnOk4ImCvaUVBxFqXL3JT1l', 'role': 'assistant', 'value': "The data consists of five columns: 'CustomerID', 'Gender', 'Age', 'Annual Income (k$)'(which we can assume as the income), and 'Spending Score (1-100)'. Given the dataset, I will create a scatter plot between 'Age' and 'Annual Income (k$)'. Let's proceed with that.", 'input': None}, 
+ {'step_id': 'msg_kiBG0BQ1JWS2EUip1GOxkKLP', 'run_id': None, 'thread_id': 'thread_DKnOk4ImCvaUVBxFqXL3JT1l', 'role': 'user', 'value': 'plot age vs income', 'input': None}]), 
+ 
+ '1': ('how many females are there', 
+ [{'step_id': 'msg_7SugOC7q6WDgi2hS1jeUCcoM', 'run_id': 'run_1jyeAfAJLAnyxJNa2GTZCLbu', 'thread_id': 'thread_DKnOk4ImCvaUVBxFqXL3JT1l', 'role': 'assistant', 'value': 'There are 112 females in the dataset.', 'input': None}])}

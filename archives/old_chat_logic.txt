@@ -1,0 +1,34 @@
+# # chat history
+# printed_steps = set()  # Initialize an empty set to track printed inputs
+
+# if responses:
+#     st.markdown("Chat History")
+#     for key, (user_message, assistant_responses) in responses.items():
+#         with st.chat_message("user"):
+#             st.markdown(user_message)
+#         for response in (assistant_responses):
+#             if response['role'] == 'assistant':
+#                 with st.chat_message("ai"):
+#                     st.markdown(response['value'])
+#                     if 'image_file_file_id' in response:
+#                         st.markdown(response['image_file_file_id'])
+#                         image_path = f"images/{response['image_file_file_id']}.png"
+#                         try:
+#                             image = Image.open(image_path)
+#                             st.image(image)
+#                         except:
+#                             st.markdown("There was an error displaying the image")
+
+#                 for i, (user_message, code_response) in code_responses.items():
+#                     for code in code_response:
+#                         if code["run_id"] == response["run_id"]:
+#                             if code["errors"] is None:
+#                                 step = code["step_id"]
+#                                 if step not in printed_steps:
+#                                     with st.chat_message("ai"):    
+#                                         #if st.button("See code", key = code["step_id"]):
+#                                         st.code(code["input"])
+#                                         printed_steps.add(step)  # Add the input to the set
+
+#             else:
+#                 pass

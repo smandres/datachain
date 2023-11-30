@@ -1,0 +1,4 @@
+tool_calls= [CodeToolCall(id='call_co0mQ7qEE3XS68Ww7o123MdZ', 
+                    code_interpreter= CodeInterpreter(input="import matplotlib.pyplot as plt\n\n# Filter data for New York and Maryland\nny_data = data[data['state'] == 'NY']\nmd_data = data[data['state'] == 'MD']\n\n# Convert 'date' to datetime format\nny_data['date'] = pd.to_datetime(ny_data['date'])\nmd_data['date'] = pd.to_datetime(md_data['date'])\n\n# Plot death trends\nplt.figure(figsize=(10,6))\nplt.plot(ny_data['date'], ny_data['deaths'], label='New York')\nplt.plot(md_data['date'], md_data['deaths'], label='Maryland')\nplt.xlabel('Date')\nplt.ylabel('Deaths')\nplt.title('Trend of Deaths in New York and Maryland')\nplt.legend()\nplt.show()",
+ 	        outputs=[CodeInterpreterOutputImage(image=CodeInterpreterOutputImageImage(file_id='file-K8QqPChDH3wsAt3CC5ek92rO'), type='image')]), 
+            type='code_interpreter')]

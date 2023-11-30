@@ -1,4 +1,0 @@
-Given data, explain concisely what the data is about and what columns are available
-Columns are {{$columns}}
-Descriptions are {{$descriptions}}
-This was the {{$prompt}}
