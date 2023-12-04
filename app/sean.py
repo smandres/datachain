@@ -1,12 +1,11 @@
 import streamlit as st
 from openai import OpenAI
 import pandas as pd
-import sys
 import os
 import sys
-sys.path.append('app\backend.py')
+#sys.path.append('app\data_chain_backend.py')
 #from backend_app import initial_chain, recreate
-from backend import Chain
+from backend.data_chain_backend import Chain
 from PIL import Image
 
 st.set_page_config(page_title="DataChain", page_icon="📈", layout="centered", initial_sidebar_state="expanded", menu_items=None)

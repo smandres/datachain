@@ -112,10 +112,14 @@ class Chain():
             return base64.b64encode(image_file.read()).decode('utf-8')
         
     def initial_chain(self, prompt, dataset, gpt_model):
-        
-        path = "data" #r"C:\Users\cadet_admin\Desktop\pair-programming\datachain\app\data"
-        new_path = path + "\\" + dataset
-        # create file
+        path = "data\\"
+        new_path = os.path.join(path, dataset)
+
+        # Check if the file exists before trying to open it
+        if not os.path.isfile(new_path):
+            # If the file doesn't exist, raise a FileNotFoundError
+            raise FileNotFoundError(f"File not found: {new_path}")
+
         file = self.client.files.create(
         file = open(new_path, "rb"),
         purpose='assistants'
@@ -172,10 +176,15 @@ class Chain():
         return processed_messages, processed_code
 
     def recreate(self, prompt, dataset, gpt_model):
+        
+        path = "data\\"
+        new_path = os.path.join(path, dataset)
 
-        path = "data" #r"C:\Users\cadet_admin\Desktop\pair-programming\datachain\app\data"
-        new_path = path + "\\" + dataset
-        # create file
+        # Check if the file exists before trying to open it
+        if not os.path.isfile(new_path):
+            # If the file doesn't exist, raise a FileNotFoundError
+            raise FileNotFoundError(f"File not found: {new_path}")
+
         file = self.client.files.create(
         file = open(new_path, "rb"),
         purpose='assistants'
